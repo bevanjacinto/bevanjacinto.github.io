@@ -10,13 +10,12 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import "@fontsource/poppins";
+import { useState } from "react";
 
 const pages = ["About", "Experience", "Education", "Projects"];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -68,7 +67,7 @@ function ResponsiveAppBar() {
                   mr: 5,
                   letterSpacing: "0.1rem",
                   borderRadius: 4,
-                  border: "2px solid",
+                  border: "1.8px solid",
                   paddingX: "18px",
                   "&:hover": {
                     background: "white",
@@ -88,7 +87,7 @@ function ResponsiveAppBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="primary"
             >
               <MenuIcon />
             </IconButton>
@@ -112,7 +111,13 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography
+                    textAlign="center"
+                    color="secondary"
+                    sx={{ fontFamily: "poppins" }}
+                  >
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -120,9 +125,9 @@ function ResponsiveAppBar() {
 
           <Typography
             variant="h6"
-            noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
+            color="primary"
             sx={{
               mr: 1,
               display: { xs: "flex", md: "none" },
@@ -130,7 +135,6 @@ function ResponsiveAppBar() {
               letterSpacing: "0.2rem",
               fontWeight: 600,
               fontSize: 16,
-              color: "inherit",
               textDecoration: "none",
             }}
           >
