@@ -2,6 +2,20 @@ import { Button, Container, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { green } from "@mui/material/colors";
+import resume from "../assets/BevanFinalResume5.pdf";
+
+const handleDownload = () => {
+  // Replace 'your-resume.pdf' with the actual filename and path of your resume
+  const resumeUrl = "";
+
+  // Trigger the download
+  const link = document.createElement("a");
+  link.href = resumeUrl;
+  link.download = "your-resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const About = () => {
   return (
@@ -9,20 +23,20 @@ const About = () => {
       <Container
         sx={{
           display: { xs: "none", md: "flex" },
-          marginTop: "150px",
-
-          width: "930px",
-          height: "565px",
-          //background: "red",
+          marginTop: "100px",
+          justifyContent: "center",
+          width: "100%",
+          height: "560px",
         }}
+        maxWidth="xl"
       >
         <Stack direction="row" sx={{ gap: 10 }}>
           <Container
             disableGutters
             sx={{
               display: "flex",
-              height: "400px",
-              width: "400px",
+              height: "450px",
+              width: "450px",
             }}
           >
             <img src="src\assets\new.jpeg" alt="" />
@@ -30,8 +44,8 @@ const About = () => {
           <Container disableGutters sx={{ display: "flex" }}>
             <Stack
               sx={{
-                height: "400px",
-                width: "400px",
+                height: "450px",
+                width: "450px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -68,28 +82,35 @@ const About = () => {
               >
                 Fullstack developer
               </Typography>
-              <Button
-                color="secondary"
-                sx={{
-                  my: 2,
-                  display: "block",
-                  fontFamily: "poppins",
-                  fontSize: 12,
-                  fontWeight: 600,
-                  letterSpacing: "0.1rem",
-                  borderRadius: 5,
-                  border: "1.8px solid",
-                  paddingX: "18px",
-                  paddingY: "10px",
-                  transition: "all 300ms ease",
-                  "&:hover": {
-                    background: "black",
-                    color: "white",
-                  },
-                }}
+              <a
+                href={resume}
+                download="BevanResume"
+                target="_blank"
+                style={{ textDecoration: "none" }}
               >
-                Download CV
-              </Button>
+                <Button
+                  color="secondary"
+                  sx={{
+                    my: 2,
+                    display: "block",
+                    fontFamily: "poppins",
+                    fontSize: 12,
+                    fontWeight: 600,
+                    letterSpacing: "0.1rem",
+                    borderRadius: 5,
+                    border: "1.8px solid",
+                    paddingX: "18px",
+                    paddingY: "10px",
+                    transition: "all 300ms ease",
+                    "&:hover": {
+                      background: "black",
+                      color: "white",
+                    },
+                  }}
+                >
+                  Download CV
+                </Button>
+              </a>
               <Container
                 sx={{
                   justifyContent: "center",
@@ -157,28 +178,35 @@ const About = () => {
           >
             Fullstack developer
           </Typography>
-          <Button
-            color="secondary"
-            sx={{
-              my: 2,
-              display: "block",
-              fontFamily: "poppins",
-              fontSize: 12,
-              fontWeight: 600,
-              letterSpacing: "0.1rem",
-              borderRadius: 5,
-              border: "1.8px solid",
-              paddingX: "18px",
-              paddingY: "10px",
-              transition: "all 300ms ease",
-              "&:hover": {
-                background: "black",
-                color: "white",
-              },
-            }}
+          <a
+            href={resume}
+            download="BevanResume"
+            target="_blank"
+            style={{ textDecoration: "none" }}
           >
-            Download CV
-          </Button>
+            <Button
+              color="secondary"
+              sx={{
+                my: 2,
+                display: "block",
+                fontFamily: "poppins",
+                fontSize: 12,
+                fontWeight: 600,
+                letterSpacing: "0.1rem",
+                borderRadius: 5,
+                border: "1.8px solid",
+                paddingX: "18px",
+                paddingY: "10px",
+                transition: "all 300ms ease",
+                "&:hover": {
+                  background: "black",
+                  color: "white",
+                },
+              }}
+            >
+              Download CV
+            </Button>
+          </a>
           <Container
             sx={{
               justifyContent: "center",
