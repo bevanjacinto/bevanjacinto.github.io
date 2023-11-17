@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
             disableGutters
             sx={{
               display: { sm: "flex", md: "none" },
-              background: "red",
+
               maxWidth: "170px",
             }}
           >

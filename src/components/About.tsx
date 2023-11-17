@@ -107,25 +107,90 @@ const About = () => {
 
       {/* Mobile code */}
 
-      {/* <Container
+      <Stack
+        direction="column"
         sx={{
-          display: { xs: "flex", md: "none" },
-          flexWrap: "wrap",
+          //background: "green",
+          alignItems: "center",
+          display: {
+            xs: "flex",
+            md: "none",
+          },
         }}
       >
-        <Stack direction="column" sx={{}}>
-          <Container
+        <Stack
+          sx={{
+            height: "400px",
+            width: "320px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            //background: "red",
+          }}
+        >
+          <Typography
             sx={{
-              position: "absolute",
-              display: "flex",
-              height: "80vh",
-              width: "100vh",
+              fontWeight: 600,
+              fontSize: "0.8rem",
+              color: "rgb(85,85,85)",
+              fontFamily: "poppins",
             }}
           >
-            <img src="src\assets\new.jpeg" alt="" />
+            Hello, I'm
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "2.5rem",
+              fontWeight: 700,
+              fontFamily: "poppins",
+            }}
+          >
+            Bevan Jacinto
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: 600,
+              fontSize: "1.5rem",
+              color: "rgb(85,85,85)",
+              fontFamily: "poppins",
+            }}
+          >
+            Fullstack developer
+          </Typography>
+          <Button
+            color="secondary"
+            sx={{
+              my: 2,
+              display: "block",
+              fontFamily: "poppins",
+              fontSize: 12,
+              fontWeight: 600,
+              letterSpacing: "0.1rem",
+              borderRadius: 5,
+              border: "1.8px solid",
+              paddingX: "18px",
+              paddingY: "10px",
+              transition: "all 300ms ease",
+              "&:hover": {
+                background: "black",
+                color: "white",
+              },
+            }}
+          >
+            Download CV
+          </Button>
+          <Container
+            sx={{
+              justifyContent: "center",
+              gap: "1rem",
+              display: "flex",
+            }}
+          >
+            <LinkedInIcon sx={{ fontSize: "50px" }} />
+            <GitHubIcon sx={{ fontSize: "50px" }} />
           </Container>
         </Stack>
-      </Container> */}
+      </Stack>
     </>
   );
 };
