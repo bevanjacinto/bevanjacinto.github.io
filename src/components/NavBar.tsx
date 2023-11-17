@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import "@fontsource/poppins";
 import { useState } from "react";
+import { blue } from "@mui/material/colors";
 
 const pages = ["About", "Experience", "Education", "Projects"];
 
@@ -26,7 +27,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "black" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "black", width: "100%" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -46,7 +47,6 @@ function ResponsiveAppBar() {
           >
             Bevan Jacinto
           </Typography>
-
           <Box
             sx={{
               flexGrow: 1,
@@ -79,7 +79,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -122,24 +121,31 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-
-          <Typography
-            variant="h6"
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            color="primary"
+          <Container
+            disableGutters
             sx={{
-              mr: 1,
-              display: { xs: "flex", md: "none" },
-              fontFamily: "poppins",
-              letterSpacing: "0.2rem",
-              fontWeight: 600,
-              fontSize: 16,
-              textDecoration: "none",
+              display: { sm: "flex", md: "none" },
+              background: "red",
+              maxWidth: "170px",
             }}
           >
-            Bevan Jacinto
-          </Typography>
+            <Typography
+              variant="h6"
+              component="a"
+              href="#app-bar-with-responsive-menu"
+              color="primary"
+              sx={{
+                mr: 1,
+                fontFamily: "poppins",
+                letterSpacing: "0.2rem",
+                fontWeight: 600,
+                fontSize: 16,
+                textDecoration: "none",
+              }}
+            >
+              Bevan Jacinto
+            </Typography>
+          </Container>
         </Toolbar>
       </Container>
     </AppBar>
