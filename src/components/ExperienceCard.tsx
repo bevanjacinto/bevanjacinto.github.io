@@ -1,127 +1,252 @@
-import * as React from "react";
 import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Container } from "@mui/material";
+import { CardActionArea, Container, List, ListItem } from "@mui/material";
 
 interface Props {
   name: string;
-  img: string;
-  dateFrom: string;
+  datefrom: string;
   dateTo: string;
-  degreeName: string;
+  content: string[];
+  logo: string;
 }
 
-export default function ActionAreaCard(obj: Props) {
+export default function ExperienceCard(obj: Props) {
   return (
     <>
-      <Card
+      {/* <Card
         sx={{
-          maxWidth: 320,
-          width: "100%",
-          display: { xs: "none", md: "flex" },
-          marginX: 8,
-          border: "1px solid black",
-          borderRadius: "10px",
-          boxShadow: "3px 3px grey",
-          padding: "12px",
+          display: {
+            xs: "block",
+            md: "block",
+          },
+          marginX: 1,
+          maxWidth: 340,
+          maxHeight: 500,
+          borderRadius: 8,
+          border: "2px solid black",
         }}
       >
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="320"
-            image={obj.img}
-            alt="University"
-          />
-          <CardContent>
-            <Container disableGutters>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                sx={{ background: "white" }}
-                fontFamily="poppins"
-                fontWeight="700"
-                align="center"
-              >
-                {obj.name}
-              </Typography>
-            </Container>
-            <Container disableGutters>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                align="center"
-                fontFamily="poppins"
-                fontWeight="500"
-              >
-                {obj.degreeName}
-              </Typography>
-            </Container>
-            <Container>
-              <Typography variant="body2" color="text.secondary" align="center">
-                {obj.dateFrom + " - " + obj.dateTo}
-              </Typography>
-            </Container>
-          </CardContent>
-        </CardActionArea>
+        <CardHeader
+          disableTypography={false}
+          avatar={<Avatar src={obj.logo}></Avatar>}
+          title={<Typography sx={{ fontWeight: 700 }}>{obj.name}</Typography>}
+          subheader={
+            <Typography>{obj.datefrom + " - " + obj.dateTo}</Typography>
+          }
+          titleTypographyProps={{ fontWeight: 600 }}
+          sx={{ color: "black", background: "white" }}
+        />
+
+        <CardContent sx={{ background: "black" }}>
+          <List sx={{ listStyleType: "disc" }}>
+            {obj.content.map((line) => {
+              return (
+                <ListItem>
+                  <Typography
+                    variant="body2"
+                    color="primary"
+                    sx={{ display: "list-item", fontWeight: 500 }}
+                  >
+                    {line}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          display: {
+            xs: "block",
+            md: "block",
+          },
+          marginX: 1,
+          maxWidth: 340,
+          maxHeight: 500,
+          borderRadius: 8,
+          border: "2px solid black",
+        }}
+      >
+        <CardHeader
+          disableTypography={false}
+          avatar={<Avatar src={obj.logo}></Avatar>}
+          title={<Typography>{obj.name}</Typography>}
+          subheader={
+            <Typography>{obj.datefrom + " - " + obj.dateTo}</Typography>
+          }
+          titleTypographyProps={{ fontWeight: 600 }}
+          sx={{ color: "white", background: "black" }}
+        />
+
+        <CardContent sx={{ background: "white" }}>
+          <List sx={{ listStyleType: "disc" }}>
+            {obj.content.map((line) => {
+              return (
+                <ListItem>
+                  <Typography
+                    variant="body2"
+                    color="secondary"
+                    sx={{ display: "list-item", fontWeight: 500 }}
+                  >
+                    {line}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          display: {
+            xs: "block",
+            md: "block",
+          },
+          marginX: 1,
+          maxWidth: 340,
+          maxHeight: 500,
+          borderRadius: 8,
+          border: "2px solid black",
+        }}
+      >
+        <CardHeader
+          disableTypography={false}
+          avatar={<Avatar src={obj.logo}></Avatar>}
+          title={<Typography>{obj.name}</Typography>}
+          subheader={
+            <Typography>{obj.datefrom + " - " + obj.dateTo}</Typography>
+          }
+          titleTypographyProps={{ fontWeight: 600 }}
+          sx={{ color: "black", background: "white" }}
+        />
+
+        <CardContent sx={{ background: "white" }}>
+          <List sx={{ listStyleType: "disc" }}>
+            {obj.content.map((line) => {
+              return (
+                <ListItem>
+                  <Typography
+                    variant="body2"
+                    color="secondary"
+                    sx={{ display: "list-item", fontWeight: 500 }}
+                  >
+                    {line}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </CardContent>
+      </Card> */}
+
+      <Card
+        sx={{
+          display: {
+            xs: "none",
+            md: "block",
+          },
+          marginX: 3,
+          maxWidth: 450,
+          maxHeight: 750,
+          borderRadius: 8,
+          border: "2px solid black",
+          background: "black",
+        }}
+      >
+        <CardHeader
+          disableTypography={false}
+          avatar={<Avatar src={obj.logo}></Avatar>}
+          title={<Typography sx={{ fontWeight: 700 }}>{obj.name}</Typography>}
+          subheader={
+            <Typography sx={{ fontWeight: 700 }}>
+              {obj.datefrom + " - " + obj.dateTo}
+            </Typography>
+          }
+          sx={{ color: "white" }}
+        />
+
+        <CardContent>
+          <List
+            sx={{
+              listStyleType: "disc",
+            }}
+          >
+            {obj.content.map((line) => {
+              return (
+                <ListItem>
+                  <Typography
+                    variant="body2"
+                    color="primary"
+                    sx={{ display: "list-item", fontWeight: 500, fontSize: 13 }}
+                  >
+                    {line}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </CardContent>
       </Card>
 
       {/* Mobile view */}
 
       <Card
         sx={{
-          maxWidth: 400,
-          maxHeight: 400,
-          width: "100%",
-          height: "100%",
-          display: { xs: "flex", md: "none" },
-          marginX: "10px",
-          borderRadius: "10px",
+          display: {
+            xs: "block",
+            md: "none",
+          },
+          marginX: 3,
+          maxWidth: 450,
+          maxHeight: 750,
+          borderRadius: 8,
           border: "2px solid black",
-          padding: "8px",
+          background: "black",
         }}
       >
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="200"
-            image={obj.img}
-            alt="green iguana"
-          />
-          <CardContent>
-            <Container disableGutters>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                align="center"
-                fontFamily="poppins"
-                fontWeight="700"
-              >
-                {obj.name}
-              </Typography>
-            </Container>
-            <Container disableGutters>
-              <Typography
-                variant="body2"
-                color="text.secondary"
-                align="center"
-                fontFamily="poppins"
-                fontWeight="500"
-              >
-                {obj.degreeName}
-              </Typography>
-            </Container>
-            <Container>
-              <Typography variant="body2" color="text.secondary" align="center">
-                {obj.dateFrom + " - " + obj.dateTo}
-              </Typography>
-            </Container>
-          </CardContent>
-        </CardActionArea>
+        <CardHeader
+          disableTypography={false}
+          avatar={<Avatar src={obj.logo}></Avatar>}
+          title={<Typography sx={{ fontWeight: 700 }}>{obj.name}</Typography>}
+          subheader={
+            <Typography sx={{ fontWeight: 700 }}>
+              {obj.datefrom + " - " + obj.dateTo}
+            </Typography>
+          }
+          sx={{ color: "white" }}
+        />
+
+        <CardContent>
+          <List
+            sx={{
+              listStyleType: "disc",
+            }}
+          >
+            {obj.content.map((line) => {
+              return (
+                <ListItem>
+                  <Typography
+                    variant="body2"
+                    color="primary"
+                    sx={{
+                      display: "list-item",
+                      fontWeight: 500,
+                      fontSize: 10.5,
+                    }}
+                  >
+                    {line}
+                  </Typography>
+                </ListItem>
+              );
+            })}
+          </List>
+        </CardContent>
       </Card>
     </>
   );

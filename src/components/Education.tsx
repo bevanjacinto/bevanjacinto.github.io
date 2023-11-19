@@ -1,5 +1,5 @@
 import { Container, Typography } from "@mui/material";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "./EducationCard";
 
 const Education = () => {
   return (
@@ -14,7 +14,7 @@ const Education = () => {
           height: "100%",
           flexWrap: "wrap",
           gap: 3,
-          paddingY: "60px",
+          paddingY: "70px",
           justifyContent: "center",
         }}
       >
@@ -41,8 +41,8 @@ const Education = () => {
         <ExperienceCard
           name="University of Mumbai"
           img="src\assets\University_of_Mumbai_coat_of_arms.svg.png"
-          dateFrom="2021"
-          dateTo="2023"
+          dateFrom="2016"
+          dateTo="2020"
           degreeName="BE Information Technology"
         />
       </Container>
