@@ -1,6 +1,5 @@
 import { Container, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
-import background from "../assets/paraback.png";
 
 const fih = [
   "Designed UI and widgets for various application components using Figma.",

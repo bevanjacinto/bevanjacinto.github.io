@@ -1,21 +1,7 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { green } from "@mui/material/colors";
 import resume from "../assets/BevanFinalResume5.pdf";
-
-const handleDownload = () => {
-  // Replace 'your-resume.pdf' with the actual filename and path of your resume
-  const resumeUrl = "";
-
-  // Trigger the download
-  const link = document.createElement("a");
-  link.href = resumeUrl;
-  link.download = "your-resume.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
 
 const About = () => {
   return (

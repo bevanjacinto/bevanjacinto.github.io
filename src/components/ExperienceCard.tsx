@@ -183,7 +183,7 @@ export default function ExperienceCard(obj: Props) {
                   <Typography
                     variant="body2"
                     color="primary"
-                    sx={{ display: "list-item", fontWeight: 500, fontSize: 13 }}
+                    sx={{ display: "list-item", fontWeight: 500, fontSize: 15 }}
                   >
                     {line}
                   </Typography>
