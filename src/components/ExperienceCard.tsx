@@ -179,7 +179,7 @@ export default function ExperienceCard(obj: Props) {
           >
             {obj.content.map((line) => {
               return (
-                <ListItem>
+                <ListItem key={line}>
                   <Typography
                     variant="body2"
                     color="primary"
