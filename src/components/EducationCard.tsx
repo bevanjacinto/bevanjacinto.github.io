@@ -21,13 +21,10 @@ export default function ActionAreaCard(obj: Props) {
           maxWidth: 450,
           maxHeight: 750,
           borderRadius: 8,
-          // maxWidth: 320,
           width: "100%",
           display: { xs: "none", md: "flex" },
-          // marginX: 8,
           border: "1px solid black",
-          // borderRadius: "10px",
-          boxShadow: "3px 3px grey",
+
           padding: "12px",
         }}
       >
@@ -82,13 +79,9 @@ export default function ActionAreaCard(obj: Props) {
           maxWidth: 450,
           maxHeight: 750,
           borderRadius: 8,
-          // maxWidth: 400,
-          // maxHeight: 400,
           width: "100%",
           height: "100%",
           display: { xs: "flex", md: "none" },
-          // marginX: "10px",
-          // borderRadius: "10px",
           border: "2px solid black",
           padding: "8px",
         }}

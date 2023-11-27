@@ -83,6 +83,7 @@ const Projects = () => {
       <ProjectCard {...gameHub} />
       <ProjectCard {...smp} />
       <ProjectCard {...medlabs} />
+
       <Typography
         variant="h5"
         component="a"
@@ -93,7 +94,7 @@ const Projects = () => {
         fontWeight="500"
         letterSpacing={1}
         color="primary"
-        marginBottom="20px"
+        width="100%"
       >
         And many more...
       </Typography>
