@@ -11,7 +11,6 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import "@fontsource/poppins";
 import { useState } from "react";
-import { blue } from "@mui/material/colors";
 
 const pages = ["About", "Experience", "Education", "Projects"];
 
@@ -74,6 +73,7 @@ function ResponsiveAppBar() {
                     color: "black",
                   },
                 }}
+                href={"#" + page}
               >
                 {page}
               </Button>
@@ -111,9 +111,11 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography
+                    component="a"
                     textAlign="center"
                     color="secondary"
                     sx={{ fontFamily: "poppins" }}
+                    href={"#" + page}
                   >
                     {page}
                   </Typography>

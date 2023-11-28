@@ -5,6 +5,7 @@ const Education = () => {
   return (
     <>
       <Container
+        id="Education"
         disableGutters
         maxWidth="xl"
         sx={{

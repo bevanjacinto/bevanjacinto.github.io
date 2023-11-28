@@ -19,24 +19,6 @@ interface Props {
   deplink?: string;
 }
 
-// const obj = [
-//   "Developed a game listing website clone using React, Vite, and Typescript.",
-//   "Integrated frontend frameworks including Chakra UI and Bootstrap to enhance the user interface and experience.",
-//   "Implemented data fetching from the RAWG API to dynamically populate and display games in a grid format on the webpage.",
-// ];
-
-// const skills = [
-//   "Figma",
-//   "Java",
-//   "Python",
-//   "Docker",
-//   "AWS",
-//   "React.js",
-//   "React.js",
-//   "React.js",
-//   "React.js",
-// ];
-
 const ProjectCard = (obj: Props) => {
   return (
     <>

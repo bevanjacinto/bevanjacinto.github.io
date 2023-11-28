@@ -48,6 +48,7 @@ const medlabs = {
 const Projects = () => {
   return (
     <Container
+      id="Projects"
       disableGutters
       maxWidth="xl"
       sx={{
