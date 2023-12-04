@@ -24,11 +24,10 @@ export default function ActionAreaCard(obj: Props) {
           width: "100%",
           display: { xs: "none", md: "flex" },
           border: "1px solid black",
-
           padding: "12px",
         }}
       >
-        <CardActionArea>
+        <CardActionArea disabled>
           <CardMedia
             component="img"
             height="320"

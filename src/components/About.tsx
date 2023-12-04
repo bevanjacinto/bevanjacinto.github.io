@@ -26,7 +26,11 @@ const About = () => {
                 width: "450px",
               }}
             >
-              <img src="src\assets\new.jpeg" alt="" />
+              <img
+                style={{ borderRadius: 10 }}
+                src="src\assets\new.jpeg"
+                alt=""
+              />
             </Container>
             <Container disableGutters sx={{ display: "flex" }}>
               <Stack
