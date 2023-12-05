@@ -1,8 +1,10 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import resume from "../assets/BevanFinalResume5.pdf";
+import resume from "../assets/BevanFinalResume6.pdf";
 import Typewriter from "typewriter-effect";
+import myImage from "../assets/new.jpeg";
+
 const About = () => {
   return (
     <>
@@ -26,11 +28,7 @@ const About = () => {
                 width: "450px",
               }}
             >
-              <img
-                style={{ borderRadius: 10 }}
-                src="src\assets\new.jpeg"
-                alt=""
-              />
+              <img style={{ borderRadius: 10 }} src={myImage} alt="" />
             </Container>
             <Container disableGutters sx={{ display: "flex" }}>
               <Stack

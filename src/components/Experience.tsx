@@ -1,5 +1,9 @@
 import { Container, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
+import frugal from "../assets/fih.png";
+import jio from "../assets/Jio-Logo.png";
+import rocket from "../assets/rocket_mortgage_profile_picture.png";
+import tcon from "../assets/tcs_logo.png";
 
 const fih = [
   "Designed UI and widgets for various application components using Figma.",
@@ -69,28 +73,28 @@ const Experience = () => {
           name="Frugal Innovation Hub"
           datefrom="Sept 2023"
           dateTo="Present"
-          logo="src\assets\fih.png"
+          logo={frugal}
           content={fih}
         />
         <ExperienceCard
           name="Rocket Central"
           datefrom="Jun 2022"
           dateTo="Aug 2022"
-          logo="src\assets\rocket_mortgage_profile_picture.png"
+          logo={rocket}
           content={rc}
         />
         <ExperienceCard
           name="Reliance Jio"
           datefrom="Sept 2020"
           dateTo="Aug 2021"
-          logo="src\assets\Jio-Logo.png"
+          logo={jio}
           content={rj}
         />
         <ExperienceCard
           name="Tata Consultancy Services"
           datefrom="Jun 2019"
           dateTo="Feb 2020"
-          logo="src\assets\tcs_logo.png"
+          logo={tcon}
           content={tcs}
         />
       </Container>

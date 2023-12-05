@@ -1,5 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import ExperienceCard from "./EducationCard";
+import MasterUni from "../assets/Santa_Clara_U_Seal.svg.png";
+import BachelorUni from "../assets/University_of_Mumbai_coat_of_arms.svg.png";
 
 const Education = () => {
   return (
@@ -34,14 +36,14 @@ const Education = () => {
         </Container>
         <ExperienceCard
           name="Santa Clara University"
-          img="src\assets\Santa_Clara_U_Seal.svg.png"
+          img={MasterUni}
           dateFrom="2021"
           dateTo="2023"
           degreeName="MS Computer Science & Engineering"
         />
         <ExperienceCard
           name="University of Mumbai"
-          img="src\assets\University_of_Mumbai_coat_of_arms.svg.png"
+          img={BachelorUni}
           dateFrom="2016"
           dateTo="2020"
           degreeName="BE Information Technology"
