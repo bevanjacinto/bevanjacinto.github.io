@@ -6,9 +6,10 @@ import rocket from "../assets/rocket_mortgage_profile_picture.png";
 import tcon from "../assets/tcs_logo.png";
 
 const fih = [
-  "Designed UI and widgets for various application components using Figma.",
+  "Developed dynamic and responsive user interfaces using React.js, leveraging component-based architecture.",
+  "Implemented state management with React Hooks and Context API to enhance application functionality and maintainability.",
+  "Integrated Material-UI components to ensure a consistent and visually appealing design across the application.",
   "Developing cross-platform full-stack applications using Flutter and Dart, with Firebase for backend support.",
-  "Proficiently utilized Git for collaborative work with team members.",
   "Collaborated with non-profit organizations to create informative applications catering to people with disabilities.",
 ];
 
@@ -71,7 +72,7 @@ const Experience = () => {
         </Container>
         <ExperienceCard
           name="Frugal Innovation Hub"
-          datefrom="Sept 2023"
+          datefrom="Jan 2022"
           dateTo="Present"
           logo={frugal}
           content={fih}
