@@ -196,7 +196,13 @@ const About = () => {
                 fontFamily: "poppins",
               }}
             >
-              Fullstack developer
+              <Typewriter
+                options={{
+                  strings: ["Fullstack Developer", "Software Engineer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </Typography>
             <a
               href={resume}
