@@ -5,6 +5,7 @@ import jio from "../assets/Jio-Logo.png";
 import rocket from "../assets/rocket_mortgage_profile_picture.png";
 import tcon from "../assets/tcs_logo.png";
 import nt from "../assets/nt.jpg";
+import htech from "../assets/hcl.jpg";
 
 const fih = [
   "Developed dynamic and reusable buttons and forms using React and Typescript for an e-learning application to teach unprivileged children.",
@@ -45,6 +46,17 @@ const ntr = [
   "Enabled encryption at rest and in transit using AWS Key Management Service to safeguard sensitive financial data.",
   "Conducted security testing using tools like OWASP ZAP to identify and address potential vulnerabilities in the application, ensuring robust protection of sensitive financial data.",
   "Contributed to an improvement in user satisfaction by integrating an intuitive design and advanced functionality into the financial system.",
+];
+
+const hcl = [
+  "Served as a Full Stack Java developer, responsible for implementing user interface (UI/UX) designs using HTML, CSS, Bootstrap, and frontend technologies like React.",
+  "Designed and developed Data Visualization Web Dashboards using React, TypeScript, and HighchartsJS.",
+  "These dashboards presented tabular and graphical representations of KPIs (Key Performance Indicators), such as User Retention and Churn Rate, for various applications.",
+  "Used Core Java features including Collections framework, exception handling, generics and annotations in coding.",
+  "Delivered an 80% reduction in manual queries and significantly improved the efficiency of report generation, enhancing the analysis of key performance metrics and aiding business decision-making.",
+  "Created forms and dashboards using React and Bootstrap, facilitating seamless claim report filing for claims department, fostering improved communication between HR and 10,000 employees.",
+  "Used Git for collaborative version control and code review, ensuring efficient code management.",
+  "Implemented secure authentication and authorization mechanisms, including OAuth and JWT, to protect sensitive data and ensure user privacy.",
 ];
 
 const Experience = () => {
@@ -119,11 +131,11 @@ const Experience = () => {
           content={ntr}
         />
         <ExperienceCard
-          name="Tata Consultancy Services"
-          datefrom="Jun 2019"
-          dateTo="Feb 2020"
-          logo={tcon}
-          content={tcs}
+          name="HCL Tech"
+          datefrom="Nov 2018"
+          dateTo="Sept 2021"
+          logo={htech}
+          content={hcl}
         />
       </Container>
     </>
