@@ -1,7 +1,7 @@
 import { Button, Container, Stack, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import resume from "../assets/BevanFinalResume6.pdf";
+import resume from "../assets/Bevan Brandel Jacinto_Full Stack Java Developer-1 (1).pdf";
 import Typewriter from "typewriter-effect";
 import myImage from "../assets/new.jpeg";
 
