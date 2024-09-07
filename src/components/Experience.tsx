@@ -8,11 +8,11 @@ import nt from "../assets/nt.jpg";
 import htech from "../assets/hcl.jpg";
 
 const fih = [
-  "Developed dynamic and reusable buttons and forms using React and Typescript for an e-learning application to teach unprivileged children.",
-  "Integrated Material-UI components to ensure a consistent and visually appealing design across the application.",
-  "Created web interfaces using HTML, CSS, Typescript and Bootstrap to develop an internal UI for Frugal developers to update their weekly progress.",
-  "Developing cross-platform full-stack applications using Flutter and Dart, with Firebase for backend support.",
-  "Collaborated with non-profit organizations to create resource applications catering to people with disabilities.",
+  "Developed and implemented user interface (UI/UX) designs utilizing technologies such as HTML, CSS, Bootstrap, and Angular, ensuring a responsive and user-friendly experience.",
+  "Designed and developed data visualization web dashboards using Angular, TypeScript, and HighchartsJS to present key metrics clearly and effectively.",
+  "Created and integrated APIs using NodeJS and Express to retrieve and display data from a MongoDB database, ensuring seamless data flow and real-time updates in dashboards.",
+  "Provided visual and tabular representations of critical KPIs (Key Performance Indicators) such as user engagement and retention rates, supporting data-driven decision-making.",
+  "Achieved a significant reduction in manual data queries (by 80%), streamlining the process of generating reports and enhancing the accuracy and speed of performance analysis for key business metrics.",
 ];
 
 const rc = [
@@ -23,18 +23,17 @@ const rc = [
 ];
 
 const rj = [
-  "Served as a software developer, responsible for implementing user interface (UI/UX) designs using HTML, CSS, Bootstrap and frontend technologies like Angular.",
-  "Designed and developed Data VisualizationWeb Dashboards using Angular, TypeScript, and HighchartsJS.",
-  "Created an API using NodeJS and Express to fetch application data from a MongoDB database to be integrated with the dashboards.",
-  "These dashboards presented tabular and graphical representations of KPIs (Key Performance Indicators), such as User Retention and Churn Rate, for various Jio Media applications.",
-  "Delivered an 80% reduction in manual queries and significantly improved the efficiency of report generation, enhancing the analysis of key performance metrics and aiding business decision-making for Jio products.",
+  "Collaborated closely with the market research and data analysis teams to conduct surveys and gather valuable insights on the product experiences of the newly launched video conferencing application, Jiomeet.",
+  "Played a key role in ensuring high-quality user experiences and customer satisfaction for multiple Jio products.",
+  "Worked collaboratively with cross-functional teams, including market research and data analysis, to gather and analyze user feedback and insights.",
+  "Demonstrated leadership skills in overseeing service validation activities and ensuring the successful deployment of releases.",
 ];
 
 const tcs = [
-  "Designed and developed React components using HTML, CSS, and TypeScript to enhance Tata Consultancy Services web pages, making it more user friendly.",
-  "Created forms and dashboards using React and Bootstrap, facilitating seamless claim report filing for TCS’s claims department, fostering improved communication between HR and 10,000 employees.",
+  "Created a Machine Learning based classifier in Python using Natural Language Processing (NLP) to categorize Tata Consultancy Services employee claim reports into seven distinct categories using NLTK (Natural Language Toolkit).",
+  "Leveraged Anaconda Python for preprocessing of data using stemming and lemmatization.",
   "Used Git for collaborative version control and code review, ensuring efficient code management.",
-  "Utilized NodeJS and Express to develop RESTful services within React, enabling efficient retrieval of employee data across multiple pages, optimizing data management and accessibility of claim services.",
+  "Developed an organizational solution that effectively bridged communication between 10,000 employees and the Human Resources department, resulting in significant time savings of up to 70% previously spent on manual processes.",
 ];
 
 const ntr = [
@@ -95,10 +94,10 @@ const Experience = () => {
             Experience
           </Typography>
         </Container>
-        {/* <ExperienceCard
+        <ExperienceCard
           name="Frugal Innovation Hub"
-          datefrom="Jan 2022"
-          dateTo="Present"
+          datefrom="Sept 2023"
+          dateTo="Aug 2024"
           logo={frugal}
           content={fih}
         />
@@ -112,18 +111,18 @@ const Experience = () => {
         <ExperienceCard
           name="Reliance Jio"
           datefrom="Sept 2020"
-          dateTo="Aug 2021"
+          dateTo="July 2021"
           logo={jio}
           content={rj}
         />
         <ExperienceCard
           name="Tata Consultancy Services"
           datefrom="Jun 2019"
-          dateTo="Feb 2020"
+          dateTo="Aug 2019"
           logo={tcon}
           content={tcs}
-        /> */}
-        <ExperienceCard
+        />
+        {/* <ExperienceCard
           name="Northern Trust"
           datefrom="Sept 2022"
           dateTo="Present"
@@ -136,7 +135,7 @@ const Experience = () => {
           dateTo="Sept 2021"
           logo={htech}
           content={hcl}
-        />
+        /> */}
       </Container>
     </>
   );
